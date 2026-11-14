@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مقسّم منشورات Threads</title>
+<link rel="icon" href="icons/icon-32.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main>
+  <h1>مقسّم منشورات Threads</h1>
+
+  <section id="input-view">
+    <label for="source">ألصق المقال هنا</label>
+    <textarea id="source" dir="auto" rows="12" placeholder="ألصق نص المقال…"></textarea>
+
+    <div class="settings">
+      <label>الحد الأقصى للحروف
+        <input id="max" type="number" min="50" max="500" value="480">
+      </label>
+      <label>علامات القطع (افصل بينها بمسافة)
+        <input id="delims" type="text" dir="ltr" value=". ؟ ! ؛ ، ?">
+      </label>
+      <label class="check"><input id="numbering" type="checkbox" checked> أضف ترقيمًا (1/5) في نهاية كل جزء</label>
+    </div>
+
+    <button id="split" class="primary">قسّم المقال</button>
+    <p class="hint">يُفضَّل القطع عند نهاية الفقرة، ثم عند إحدى علامات القطع، ثم عند أقرب مسافة. لا تُقطع الكلمات ولا الروابط.</p>
+  </section>
+
+  <section id="parts-view" hidden>
+    <div class="bar">
+      <button id="back">← تعديل النص</button>
+      <span id="progress"></span>
+    </div>
+    <button id="next" class="primary">انسخ الجزء التالي</button>
+    <p class="hint">الصق الجزء الأول كمنشور جديد، ثم اضغط «إضافة للسلسلة» في Threads وعُد هنا لنسخ الجزء التالي.</p>
+    <ol id="parts"></ol>
+  </section>
+</main>
+<script src="splitter.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

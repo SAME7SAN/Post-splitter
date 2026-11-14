@@ -1,0 +1,5 @@
+{
+  "extName": { "message": "مقسّم المنشورات لـ Threads" },
+  "extDescription": { "message": "قسّم مقالك الطويل إلى منشورات متتابعة ضمن حد 500 حرف، وانسخها جزءًا بجزء. اختصار: Alt+C" },
+  "actionTitle": { "message": "افتح مقسّم المنشورات (Alt+C)" }
+}

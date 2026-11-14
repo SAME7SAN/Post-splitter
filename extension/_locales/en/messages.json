@@ -1,0 +1,5 @@
+{
+  "extName": { "message": "Post Splitter for Threads" },
+  "extDescription": { "message": "Split a long article into a chain of posts within the 500-character limit and copy them one by one. Shortcut: Alt+C" },
+  "actionTitle": { "message": "Open Post Splitter (Alt+C)" }
+}
